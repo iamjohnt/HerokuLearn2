@@ -31,7 +31,7 @@ public class TestResources {
         // call ratings api to get all ratings, using user ID
         Person john = webClientBuilder.build()
                 .get()
-                .uri("localhost:8080/john")
+                .uri("https://jmt-test-app.herokuapp.com/john")
                 .retrieve()
                 .bodyToMono(Person.class)
                 .block();
@@ -43,7 +43,7 @@ public class TestResources {
         // call ratings api to get all ratings, using user ID
         Person john = webClientBuilder.build()
                 .get()
-                .uri("localhost:8080/john")
+                .uri("https://jmt-test-app.herokuapp.com/john")
                 .retrieve()
                 .bodyToMono(Person.class)
                 .block();
